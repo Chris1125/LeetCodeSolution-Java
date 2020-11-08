@@ -3,7 +3,7 @@ package Q0300_0399.Q0327;
 import java.math.BigInteger;
 
 /**
- * @author <a href="yang.wang@baodanyun-inc.com">Chris</a>
+ * @author Chris
  * @description <a href="https://leetcode-cn.com/problems/count-of-range-sum/">区间和的个数</a>
  * Difficulty: Hard
  * Status: TODO

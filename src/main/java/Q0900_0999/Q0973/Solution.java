@@ -7,6 +7,7 @@ import java.util.Arrays;
  * @description <a href="https://leetcode-cn.com/problems/k-closest-points-to-origin/">最接近原点的 K 个点</a>
  * Difficulty: Medium
  * Status: TODO
+ * Daily: 2020-11-09
  * @since 2020-09-29
  */
 public class Solution {
@@ -22,21 +23,9 @@ public class Solution {
 
     public static int[][] kClosest(int[][] points, int K) {
         int[][] ints = new int[points.length][points[0].length];
-        int minLength = Integer.MAX_VALUE;
-        int index = 0;
+
         for (int[] point : points) {
             int length = point[0] * point[0] + point[1] * point[1];
-
-            if (length > minLength) {
-                continue;
-            }
-
-            if (length < minLength) {
-                minLength = length;
-                index = 0;
-            }
-
-            ints[index++] = point;
         }
 
         return Arrays.copyOf(ints, K);
